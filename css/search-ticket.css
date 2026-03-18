@@ -1,0 +1,104 @@
+body{
+margin:0;
+font-family:Arial;
+background-image:url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+/* Search Tickets Container */
+
+.container{
+width:500px;
+margin:80px auto;
+padding:35px;
+background:linear-gradient(135deg,#ffffff,#f1f1f1);
+border-radius:18px;
+box-shadow:0 20px 45px rgba(0,0,0,0.25);
+text-align:center;
+animation:fadeIn 1s ease;
+
+/* Flex layout */
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.container h2{
+margin-bottom:10px;
+font-size:28px;
+color:#333;
+}
+
+/* Inputs */
+
+#from,
+#to{
+width:100%;
+padding:12px;
+border-radius:25px;
+border:1px solid #f0680d;
+text-align:center;
+transition:0.3s;
+}
+
+#from:focus,
+#to:focus{
+border-color:#dd2476;
+box-shadow:0 0 10px rgba(221,36,118,0.4);
+outline:none;
+}
+
+/* Transport + Button Row */
+
+.select-search{
+display:flex;
+gap:10px;
+align-items:center;
+justify-content:center;
+}
+
+#transport{
+padding:12px;
+border-radius:25px;
+border:1px solid #ccc;
+flex:1;
+}
+
+/* Search Button */
+
+.btn{
+padding:12px 20px;
+border:none;
+background:#1e3c72;
+color:white;
+border-radius:25px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#2a5298;
+}
+
+/* Results */
+
+#results{
+margin-top:20px;
+padding:10px;
+font-size:16px;
+color:#f5f2f2;
+}
+
+/* Fade Animation */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
