@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Sell Ticket</title>
+<link rel="stylesheet" href="css/sell-ticket.css">
+</head>
+
+<body>
+
+<form action="backend/sell_ticket.php" method="POST" onsubmit="return validateTicket()">
+
+<h1>Sell Ticket Site :</h1>
+
+<script src="js/script.js"></script>
+
+<button onclick="darkMode()" id="modeBtn" class="btn">🌙 Dark Mode</button>
+
+<select id="transport" name="transport" onchange="suggestPrice()">
+<option>Flight ✈️</option>
+<option>Train 🚂💨</option>
+<option>Bus 🚌</option>
+</select>
+
+<input type="text" id="from_city" name="from_city" placeholder="From City">
+
+<input type="text" id="to_city" name="to_city" placeholder="To City">
+
+<input type="date" name="travel_date">
+
+<input type="number" id="price" name="price" placeholder="Selling Price">
+
+<p id="suggestion"></p>
+
+<button class="btn">Sell Ticket</button>
+
+</form>
+
+<script src="js/sell.js"></script>
+
+</body>
+</html>

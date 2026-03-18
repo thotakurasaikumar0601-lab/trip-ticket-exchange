@@ -1,0 +1,160 @@
+body{
+margin:0;
+font-family:Arial;
+background-image:url("https://media.assettype.com/dainikgomantak%2F2024-10-18%2F2p2dzwe7%2FUntitled-design-6.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+/* Navbar */
+
+header{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:rgb(6, 240, 6);
+box-shadow:0 5px 15px rgba(26, 27, 26, 0.1);
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#000000;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#e10d0d;
+}
+
+/* Hero Section */
+
+.hero{
+height:80vh;
+background:url("../images/travel-bg.jpg") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:rgb(238, 238, 251);
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+animation:fade 2s;
+}
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+
+/* Buttons */
+
+.btn{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#ff512f,#dd2476);
+color:rgb(237, 234, 234);
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Ticket Cards */
+
+.card-container{
+display:flex;
+gap:25px;
+justify-content:center;
+padding:40px;
+}
+
+.ticket-card{
+width:260px;
+background:rgb(250, 248, 248);
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(25, 24, 24, 0.2);
+transition:0.4s;
+}
+
+.ticket-card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.ticket-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(16, 16, 16, 0.4);
+}
+
+.price{
+color:#ff512f;
+font-weight:bold;
+}
+
+/* Container */
+
+.container{
+padding:40px;
+text-align:center;
+}
+
+/* Table Styling */
+
+table{
+width:80%;
+margin:auto;
+border-collapse:collapse;
+}
+
+table th{
+background:#ff512f;
+color:white;
+}
+
+table td, table th{
+padding:10px;
+border:1px solid #ddd;
+}
+
+/* Urgent Ticket Badge */
+
+.urgent{
+background:red;
+color:white;
+padding:5px 10px;
+border-radius:10px;
+display:inline-block;
+margin-top:10px;
+}
+
+/* 🌙 Dark Mode */
+
+.dark{
+background:black;
+color:white;
+}
+
+.dark header{
+background:#222;
+}
+
+.dark .ticket-card{
+background:#333;
+color:white;
+}
+
+.dark nav a{
+color:white;
+}

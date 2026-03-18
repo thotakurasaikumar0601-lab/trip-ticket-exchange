@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/search-ticket.css">
+<title>Search Tickets</title>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Search Tickets</h2>
+
+<input id="from" placeholder="From City">
+
+<input id="to" placeholder="To City">
+
+<div class="select-search">
+
+<select id="transport" name="transport" onchange="suggestPrice()">
+<option>Flight ✈️</option>
+<option>Train 🚂💨</option>
+<option>Bus 🚌</option>
+</select>
+
+<button onclick="searchTickets()" class="btn">Search</button>
+
+</div>
+
+<script src="js/script.js"></script>
+
+<button onclick="darkMode()" id="modeBtn" class="btn">🌙 Dark Mode</button>
+
+<div id="results"></div>
+
+</div>
+
+<script src="js/search.js"></script>
+
+</body>
+</html>
